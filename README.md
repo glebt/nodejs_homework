@@ -28,3 +28,5 @@ There is `SimpleDockerfile` as well.
 
 ## 5. Create Kubernetes manifests to deploy this web service into Kubernetes
 Please see the `kubernetes` folder. It assumes that Istio is installed. The `nodejs-homework` web application is configured as a virtual service. There are deployment, service, hpa manifests. 
+
+Since Istio gateway is based on `nginx` I believe the requirement to have nginx-based ingress is met. 
