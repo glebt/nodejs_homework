@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-homework
+  labels:
+    app: nodejs-homework
+spec:
+  type: ClusterIP
+  selector:
+    app: nodejs-homework
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: http
